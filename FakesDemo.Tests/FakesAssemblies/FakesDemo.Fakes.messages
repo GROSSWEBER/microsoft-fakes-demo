@@ -1,0 +1,2 @@
+D:\Users\agross\Coding\.NET\FakesDemo\FakesDemo.Tests\Fakes\FakesDemo.fakes : warning : Cannot generate stub for FakesDemo.Database: type is sealed.
+D:\Users\agross\Coding\.NET\FakesDemo\FakesDemo.Tests\Fakes\FakesDemo.fakes : warning : Cannot generate stub for FakesDemo.Y2K: type is sealed.

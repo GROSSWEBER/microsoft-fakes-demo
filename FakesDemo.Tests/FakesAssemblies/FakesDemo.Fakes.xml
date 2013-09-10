@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FakesDemo.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:FakesDemo.Fakes.ShimBadlyDesignedComponent">
+            <summary>Shim type of FakesDemo.BadlyDesignedComponent</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimBadlyDesignedComponent.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimBadlyDesignedComponent.#ctor(FakesDemo.BadlyDesignedComponent)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimBadlyDesignedComponent.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimBadlyDesignedComponent.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimBadlyDesignedComponent.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimBadlyDesignedComponent.Constructor">
+            <summary>Sets the shim of BadlyDesignedComponent.BadlyDesignedComponent()</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimBadlyDesignedComponent.Run">
+            <summary>Sets the shim of BadlyDesignedComponent.Run()</summary>
+        </member>
+        <member name="T:FakesDemo.Fakes.ShimBadlyDesignedComponent.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimBadlyDesignedComponent.AllInstances.Run">
+            <summary>Sets the shim of BadlyDesignedComponent.Run()</summary>
+        </member>
+        <member name="T:FakesDemo.Fakes.ShimDatabase">
+            <summary>Shim type of FakesDemo.Database</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimDatabase.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimDatabase.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimDatabase.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimDatabase.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimDatabase.SaveDateTime">
+            <summary>Sets the shim of Database.Save(DateTime value)</summary>
+        </member>
+        <member name="T:FakesDemo.Fakes.ShimY2K">
+            <summary>Shim type of FakesDemo.Y2K</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimY2K.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimY2K.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimY2K.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimY2K.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimY2K.CheckForY2K">
+            <summary>Sets the shim of Y2K.CheckForY2K()</summary>
+        </member>
+        <member name="T:FakesDemo.Fakes.StubBadlyDesignedComponent">
+            <summary>Stub type of FakesDemo.BadlyDesignedComponent</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.StubBadlyDesignedComponent.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.StubBadlyDesignedComponent.InitializeStub">
+            <summary>Initializes a new instance of type StubBadlyDesignedComponent</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.StubBadlyDesignedComponent.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.StubBadlyDesignedComponent.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.StubBadlyDesignedComponent.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
