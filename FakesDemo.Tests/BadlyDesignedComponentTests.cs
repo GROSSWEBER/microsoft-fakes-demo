@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Fakes;
+
+using FakesDemo.Fakes;
 
 using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -13,12 +16,12 @@ namespace FakesDemo.Tests
     {
       using (ShimsContext.Create())
       {
-        bool saveWasCalled = false;
-        DateTime savedDate = DateTime.MinValue;
+        var saveWasCalled = false;
+        var savedDate = DateTime.MinValue;
         var dateToSave = new DateTime(1, 2, 3, 4, 5, 6, 7);
 
-        System.Fakes.ShimDateTime.NowGet = () => dateToSave;
-        Fakes.ShimDatabase.SaveDateTime = x =>
+        ShimDateTime.NowGet = () => dateToSave;
+        ShimDatabase.SaveDateTime = x =>
         {
           saveWasCalled = true;
           savedDate = x;
