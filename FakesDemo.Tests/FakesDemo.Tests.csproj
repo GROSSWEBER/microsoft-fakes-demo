@@ -37,7 +37,7 @@
     <Reference Include="FakesDemo.Fakes">
       <HintPath>FakesAssemblies\FakesDemo.Fakes.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="mscorlib.4.0.0.0.Fakes">
       <HintPath>FakesAssemblies\mscorlib.4.0.0.0.Fakes.dll</HintPath>
@@ -50,14 +50,16 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BadlyDesignedComponentTests.cs" />
-    <Compile Include="BadlyDesignedComponentTests_Refactoring1_DoubleDispatch.cs" />
+    <Compile Include="BadlyDesignedComponentTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BadlyDesignedComponentTests_Refactoring1_DoubleDispatch.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Y2KTests.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Fakes Include="Fakes\System.fakes" />
-    <Fakes Include="Fakes\mscorlib.fakes" />
+    <Compile Include="Y2KTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FakesDemo\FakesDemo.csproj">
@@ -67,12 +69,12 @@
   </ItemGroup>
   <ItemGroup>
     <Fakes Include="Fakes\FakesDemo.fakes" />
-  </ItemGroup>
-  <ItemGroup>
+    <Fakes Include="Fakes\System.fakes" />
+    <Fakes Include="Fakes\mscorlib.fakes" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
