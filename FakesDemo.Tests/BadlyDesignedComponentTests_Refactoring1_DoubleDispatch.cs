@@ -37,7 +37,7 @@ namespace FakesDemo.Tests
         Assert.AreEqual(dateToSave, savedDate);
       }
     }
-    
+
     [TestMethod]
     public void Should_save_current_date_to_database_with_FakeItEasy()
     {
@@ -46,7 +46,7 @@ namespace FakesDemo.Tests
         var dateToSave = new DateTime(1, 2, 3, 4, 5, 6, 7);
 
         System.Fakes.ShimDateTime.NowGet = () => dateToSave;
-        // Or use any other faking framework, see below.
+        // Or use any other faking framework, see above.
         var database = A.Fake<IDatabase>();
 
         var sut = new BadlyDesignedComponent_Refactoring1_DoubleDispatch();
